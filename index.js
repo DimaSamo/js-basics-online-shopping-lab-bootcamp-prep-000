@@ -25,9 +25,12 @@ function viewCart() {
   if (cart.length===0){
     return "Your shopping cart is empty."
   }
+<<<<<<< HEAD
   if (cart.length===1){
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }
+=======
+>>>>>>> cd503eac5ded25d3064002a7bd0c08746c8ddba3
   const namesAndPrices = []
   for (var i=0; i<cart.length; i++){
     namesAndPrices.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
@@ -67,3 +70,5 @@ function placeOrder(cardNumber) {
   return retString
 
 }
+addToCart("hello")
+console.log(cart[0][itemName])
